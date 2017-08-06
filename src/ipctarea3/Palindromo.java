@@ -1,21 +1,18 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ipctarea3;
-
 import java.util.Scanner;
 
 /**
  *
- * @author Majus
+ * @author Gaspar Wilson Laynez Mateo
  */
+
 public class Palindromo {
     
+    // var para recibir opcion en menu
     private static Scanner sc = new Scanner(System.in);
     private static String palabra = "";
     
+    // cons para llamar metodso y verificar si palabra es palindrome
     static void Palindromo(){
         //mostrar menu y leer palabra
         menu();
@@ -23,6 +20,7 @@ public class Palindromo {
         System.out.println(result);
     }
     
+    // Texto del menu
     static void menu(){
         System.out.println("");        
         System.out.println("Palabras Palindromas");
@@ -31,6 +29,8 @@ public class Palindromo {
         palabra = sc.nextLine();
     }
     
+    // Metodo verifica si palabra es palindromo o no
+    // Regresa un mensaje indicandolo
     static String palindroma(){
 
         // return
