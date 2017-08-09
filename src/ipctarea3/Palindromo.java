@@ -13,15 +13,21 @@ public class Palindromo {
     private static String palabra = "";
     
     // cons para llamar metodso y verificar si palabra es palindrome
-    static void Palindromo(){
+    public static void Palindromo(){
+        
+        Consola cl1 = new Consola();
+
         //mostrar menu y leer palabra
         menu();
         String result = palindroma();
         System.out.println(result);
+        System.out.println("");
+
+        Consola.menuF();
     }
     
     // Texto del menu
-    static void menu(){
+    public static void menu(){
         System.out.println("");        
         System.out.println("Palabras Palindromas");
         System.out.println("");
@@ -31,7 +37,8 @@ public class Palindromo {
     
     // Metodo verifica si palabra es palindromo o no
     // Regresa un mensaje indicandolo
-    static String palindroma(){
+    public static String palindroma(){
+
 
         // return
         String msg = "Ingres Palabra";
